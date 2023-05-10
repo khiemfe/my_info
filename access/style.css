@@ -1,0 +1,938 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 255, 0.4);
+    background-color: rgba(0, 0, 0, 1);
+    background-color: #080710;
+    /* background-color: rgba(255, 255, 255, 0.27); */
+    /* background: linear-gradient(0, rgba(0, 0, 255, 0.4), #fff); */
+}
+
+.circle_1 {
+    z-index: -1;
+    left: 50px;
+    top: 40px;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(#1845ad, #23a2f6);
+}
+
+.circle_2 {
+    z-index: -1;
+    right: 70px;
+    top: 250px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(to right, #ff512f, #f09819);
+}
+
+.my_info {
+    padding-top: 80px;
+}
+
+.header {
+    display: flex;
+    padding: 40px;
+    color: var(--white-color);
+    border-radius: 30px;
+    /* Làm nhòe hình tròn màu khi nó nằm dưới khung header */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1); */
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.header_left {
+    width: 50%;
+    z-index: 0;
+    display: flex;
+    border-right: 2px solid #bbb;
+}
+
+.header_left-avt {
+    width: 30%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    justify-content: center;
+    /* box-shadow: 1px 5px 10px 1px #ababab; */
+    box-shadow: 1px 5px 5px 1px #222;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(58, 57, 57, 0.1);
+}
+
+.header_left-avt img {
+    width: 80%;
+    display: block;
+}
+
+.header_left-info {
+    margin-left: 20px;
+}
+
+.header_left-info-name {
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 2.6rem;
+}
+
+.header_left-info-job {
+    color: #999;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.header_left-info-social_network {
+    display: flex;
+    padding: 0 15px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.header_left-info-social_network-embrace {
+    position: relative;
+}
+
+.header_left-info-social_network-item {
+    width: 40px;
+    height: 40px;
+    color: #000;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 100%;
+    text-decoration: none;
+    justify-content: center;
+    background-color: var(--white-color);
+    box-shadow: 1px 5px 10px 1px #ababab;
+}
+
+.header_left-info-social_network-item:hover,
+.hover-social_network {
+    cursor: pointer;
+    background-color: #000;
+    color: var(--white-color);
+    box-shadow: 0px 2px 5px 0px #555;
+}
+
+.header_left-info-social_network-item.fb:hover,
+.hover-social_network.fb {
+    background-color: #3B5999;
+}
+
+.header_left-info-social_network-item.ins:hover,
+.hover-social_network.ins {
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.header_left-info-social_network-item.github:hover,
+.hover-social_network.github {
+    background-color: #24292f;
+}
+
+.header_left-info-social_network-item .header_left-info-social_network-item-icon {
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.hover-social_network {
+    opacity: 0;
+    top: -35px;
+    z-index: -1;
+    font-size: 12px;
+    padding: 4px 8px;
+    position: absolute;
+    border-radius: 20px;
+    transition: ease-in 0.27s;
+    transform: translateY(150%);
+}
+
+.header_left-info-social_network-item:hover .hover-social_network {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hover-social_network::before {
+    content: "";
+    left: 50%;
+    bottom: -40%;
+    border-width: 5px;
+    position: absolute;
+    border-style: solid;
+    transform: translateX(-50%);
+    border-color: #000 transparent transparent transparent;
+}
+
+.hover-social_network.fb::before {
+    border-color: #3B5999 transparent transparent transparent;
+}
+
+.hover-social_network.ins::before {
+    border-color: #e1306c transparent transparent transparent;
+}
+
+.hover-social_network.github::before {
+    border-color: #24292f transparent transparent transparent;
+}
+
+.header_right {
+    width: 50%;
+    display: flex;
+    padding: 15px 60px;
+}
+
+.header_right-item-title {
+    color: #999;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+}
+
+.header_right-item-title i {
+    margin-left: 4px;
+}
+
+.header_right-item-text {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.container_left {
+    margin-bottom: 100px;
+}
+
+.container_left-body {
+    /* width: 100%; */
+    padding: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.container_left-self {
+    width: 110px;
+    height: 110px;
+    padding: 7px 0;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px 1px #4a4a4a;
+    /* border: 2px solid rgba(255, 255, 255, 0.1); */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    
+}
+
+.container_left-self:hover {
+    background: linear-gradient( rgba(129, 156, 220, 0.6), rgb(152, 203, 248));
+}
+
+.container_left-self.active {
+    background: linear-gradient(#1845ad, rgb(35, 162, 246));
+}
+
+.container_left-self:first-child {
+    margin-top: 0;
+}
+
+.container_left-self-icon {
+    
+}
+
+.container_left-self.active .container_left-self-text {
+    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
+}
+
+.container_left-self-text {
+    color: #555;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+
+.container_right {
+    margin-bottom: 50px;
+}
+
+.container_right-body {
+    padding: 40px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    color: var(--white-color);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.container_right-body {
+    display: none;
+}
+
+.container_right-body.active {
+    display: block;
+}
+
+.container_right-body-introduce {
+
+}
+
+.container_right-body-introduce-title {
+    font-size: 2.8rem;
+    position: relative;
+    line-height: 2.8rem;
+    display: inline-block;
+}
+
+.container_right-body-introduce-title::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: -10px;
+    position: absolute;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(255, 43, 43), rgb(255, 255, 81));
+}
+
+.container_right-body-introduce-text {
+    font-size: 16px;
+    margin-top: 30px;
+    line-height: 1.8rem;
+    letter-spacing: 0.2px;
+}
+
+.container_right-body-product {
+    margin-top: 40px;
+}
+
+.container_right-body-sayings {
+    margin-top: 40px;
+}
+
+.container_right-body-sayings-list {
+    list-style: none;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container_right-body-sayings-item {
+    /* display: flex; */
+    align-items: center;
+    background-color: rgba(152, 203, 248, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+.container_right-body-sayings-item-line {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.container_right-body-sayings-item-line-item {
+    bottom: 20px;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background-color: var(--white-color);
+    /* left: 50%; */
+    margin: 0 8px;
+}
+
+.container_right-body-sayings-item-line-item.active {
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: blue;
+}
+
+.container_right-body-sayings-item-line-item:nth-child(1) {
+    left: 47%;
+}
+
+.container_right-body-sayings-item-line-item:nth-child(2) {
+    left: 50%;
+}
+
+.container_right-body-sayings-item-line-item:nth-child(3) {
+    left: 53%;
+}
+
+.container_right-body-sayings-item.active {
+    display: flex;
+}
+
+.container_right-body-sayings-item-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.container_right-body-sayings-item-text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-left: 20px;
+}
+
+.container_right-body-sayings-icon-left {
+    position: absolute;
+    left: -15px;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 7px 10px;
+    background-color: var(--white-color);
+    color: #000;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.container_right-body-sayings-icon-right {
+    position: absolute;
+    right: -15px;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 7px 10px;
+    background-color: var(--white-color);
+    color: #000;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* Học vấn */
+.container_right-body.education {
+    display: none;
+}
+
+.container_right-body-education {
+
+}
+
+.container_right-body-education-title,
+.container_right-body-hobbies-title {
+    font-size: 2.8rem;
+    position: relative;
+    line-height: 2.8rem;
+    display: inline-block;
+}
+
+.container_right-body-hobbies-title::before,
+.container_right-body-education-title::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: -10px;
+    position: absolute;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(163, 255, 43), rgb(110, 216, 255));
+}
+
+.container_right-body-education-study {
+    margin-top: 20px;
+}
+
+.container_right-body-education-study-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.container_right-body-education-study-title i {
+    color: #23a2f6;
+}
+
+.container_right-body-education-study-title-detail {
+    margin-left: 30px;
+}
+
+.container_right-body-education-study-place {
+    /* margin-top: 30px; */
+    font-size: 1.5rem;
+    position: relative;
+    line-height: 1.5rem;
+}
+
+.container_right-body-education-study-place::before {
+    top: 50%;
+    content: "";
+    width: 10px;
+    left: -30px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #23a2f6;
+    transform: translateY(-50%);
+    border: 3px solid rgb(165, 165, 255);
+}
+
+.container_right-body-education-study-title-detail-part1,
+.container_right-body-education-study-title-detail-part2 {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.container_right-body-education-study-title-detail-part1::before,
+.container_right-body-education-study-title-detail-part2::before {
+    top: 0;
+    bottom: -2px;
+    content: "";
+    left: -2.3rem;
+    position: absolute;
+    border-left: 1px solid #999;
+}
+
+.container_right-body-education-study-title-detail-part1:last-child::before,
+.container_right-body-education-study-title-detail-part2:last-child::before {
+    border: none;
+}
+
+.container_right-body-education-study-text {
+    color: #999;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.2px;
+}
+
+/* Sở thích */
+
+.container_right-body.hobbies {
+
+}
+
+.container_right-body-hobbies {
+    /* display: flex; */
+}
+
+.container_right-body-hobbies-title {
+    /* margin-bottom: 40px; */
+}
+
+.container_right-body-hobbies-part {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-around;
+    position: relative;
+}
+
+.container_right-body-hobbies-title::before {
+    background: linear-gradient(to right, rgb(255, 128, 43), rgb(255, 110, 110));
+}
+
+.container_right-body-hobbies-part-title {
+    font-size: 2rem;
+    cursor: pointer;
+    min-width: 80px;
+    padding: 15px;
+    border-bottom: 5px solid transparent;
+    /* border-radius: 15px; */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container_right-body-hobbies-part-title:first-child {
+    /* width: 150px; */
+}
+
+.container_right-body-hobbies-part-title:hover {
+    background-color: rgba(13, 247, 255, 0.05);
+    border-color:rgba(13, 247, 255, 0.1);
+}
+
+.container_right-body-hobbies-part-title i {
+    margin-right: 10px;
+    font-size: 2.5rem;
+    color: rgb(210, 86, 86);
+}
+
+.container_right-body-hobbies-part-title:nth-child(2) i {
+    color: #a7d340;
+}
+
+.container_right-body-hobbies-part-title:nth-child(3) i {
+    color: #57cf9b;
+}
+
+.container_right-body-hobbies-part-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: rgba(13, 247, 255, 1);
+    transition: all 0.2s ease; 
+}
+
+/* Fan */
+
+.container_right-body-hobbies-item {
+    display: none;
+}
+
+.container_right-body-hobbies-item.active {
+    display: block;
+}
+
+.container_right-body-hobbies-football-fan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.container_right-body-hobbies-football-fan-title {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.container_right-body-hobbies-football-fan-link {
+    width: 24%;
+    height: 200px;
+    transition: all 0.3s;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 0px #111;
+    color: transparent;
+}
+
+.container_right-body-hobbies-football-fan-link ul {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 5px;
+    -webkit-text-stroke: 0.3px rgba(255, 255, 255, 0.7);
+    text-shadow: 1px 1px 1px rgb(150, 204, 252);
+}
+
+.container_right-body-hobbies-football-fan-link ul li {
+    font-size: 1.5rem;
+}
+
+.container_right-body-hobbies-football-fan-link:hover {
+    width: 50%;
+    /* height: 220px; */
+    transform: scale(1, 1.2);
+    /* zoom: 1.2; */
+    transition: all 0.3s;
+    z-index: 100;
+    animation: animate 1s infinite linear;
+}
+
+.container_right-body-hobbies-football-fan-link:hover .container_right-body-hobbies-football-fan-link-img {
+    object-fit: cover;
+}
+
+.container_right-body-hobbies-football-fan-link-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@keyframes animate {
+    0%{
+        color: #484848;
+        text-shadow: none;
+    }
+    18%{
+        color: #484848;
+        text-shadow: none;
+    }
+    20%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900,
+        0 0 20px #ff6c00;
+    }
+    30%{
+        color: #484848;
+        text-shadow: none;
+    }
+    35%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900,
+        0 0 20px #ff6c00;
+    }
+    70%{
+        color: #484848;
+        text-shadow: none;
+    }
+    85%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900,
+        0 0 20px #ff6c00;
+    }
+    90%{
+        color: #484848;
+        text-shadow: none;
+    }
+    100%{
+        color: #484848;
+        text-shadow: none;
+    }
+}
+
+
+
+/* player */
+
+.container_right-body-hobbies-football-player {
+    display: flex;
+    overflow-x: scroll;
+    height: 300px;
+    padding: 0 10px;
+}
+
+.container_right-body-hobbies-football-player::-webkit-scrollbar {
+    display: none;
+}
+
+.container_right-body-hobbies-football-player-link {
+    text-decoration: none;
+    position: relative;
+    height: 280px;
+    margin-right: 10px;
+    border-radius: 10px;
+    /* transition: all 0.5s; */
+    box-shadow: 0px 5px 10px 0px #111;
+
+}
+
+.container_right-body-hobbies-football-fan-link ul {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    font-weight: 600;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* color: #000; */
+    letter-spacing: 2px;
+    /* animation: animate 1s infinite linear; */
+}
+
+.container_right-body-hobbies-football-player-link:last-child {
+    margin-right: 0;
+}
+
+.width_5 {
+    width: 5px;
+}
+
+/* .container_right-body-hobbies-football-fan-link ul li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(5) {
+    animation-delay: 1s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(10) {
+    animation-delay: 2s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(11) {
+    animation-delay: 2.2s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(12) {
+    animation-delay: 2.4;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(13) {
+    animation-delay: 2.6s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(14) {
+    animation-delay: 2.8s;
+}
+.container_right-body-hobbies-football-fan-link ul li:nth-child(15) {
+    animation-delay: 3s;
+} */
+
+.container_right-body-hobbies-football-player-link-wrapper {
+    height: 280px;
+    width: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3;
+}
+
+.container_right-body-hobbies-football-player-link-img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    /* filter: grayscale(100%); */
+    object-fit: cover;
+}
+
+.container_right-body-hobbies-football-player-link-img:hover {
+    transform: scale(1.15);
+}
+
+.container_right-body-hobbies-football-player-link-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* width: 100%; */
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* màu trùng vs màu nền */
+    color: transparent;
+    /* viền CHỮ màu... */
+    /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); */
+}
+
+.container_right-body-hobbies-football-player-link-name span {
+    
+}
+
+.container_right-body-hobbies-football-player-link-name span::before {
+    /* có một dòng chữ y hệt như dòng chữ của thẻ a */
+    content: attr(data-text);
+    /* absolute thì dòng chữ y hệt đó sẽ đè lên */
+    position: absolute;
+    /* màu chữ, từ màu giống màu nền chuyển thành ... */
+    color: var(--clr);
+    /* width bằng 0 để khi chưa hover thì nó chưa lên màu */
+    width: 0;
+    right: 0;
+    /* left: 0; */
+    /* tắt màu chữ khi chưa hover lên */
+    overflow: hidden;
+    /* chạy trong 1s */
+    transition: 1s;
+    -webkit-text-stroke: 1px var(--clr);
+    border-radius: 5px;
+    bottom: 10px;
+}
+
+/* .container_right-body-hobbies-football-player-link-name span:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+} */
+
+.container_right-body-hobbies-football-player-link:hover .container_right-body-hobbies-football-player-link-name span::before {
+    width: 100%;
+    border-right: 4px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+    filter: drop-shadow(0 0 15px var(--clr));
+    background-color: var(--white-color);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* .container_right-body-hobbies-football-barca, */
+.container_right-body-hobbies-game-fo4 {
+    width: 100%;
+    /* height: 150px; */
+    padding: 20px 20px;
+    display: block;
+    display: flex;
+    border-radius: 15px;
+    transition: all 0.2s;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 5px 10px 0px #222;
+}
+
+/* .container_right-body-hobbies-football-barca:hover, */
+.container_right-body-hobbies-game-fo4:hover {
+    transform: scale(1.008);
+    transition: all 0.2s;
+    box-shadow: 0px 5px 10px 0px #111;
+}
+
+/* .container_right-body-hobbies-football-barca-img, */
+.container_right-body-hobbies-game-fo4-img {
+    width: 25%;
+    height: 125px;
+    display: block;
+    border-radius: 10px;
+}
+
+/* .container_right-body-hobbies-football-barca-text, */
+.container_right-body-hobbies-game-fo4-text {
+    color: #000;
+    margin-left: 30px;
+}
+
+/* .container_right-body-hobbies-football-barca-text h3, */
+.container_right-body-hobbies-game-fo4-text h3 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.container_right-body-hobbies-football-barca-text p,
+.container_right-body-hobbies-game-fo4-text p {
+    font-size: 1.4rem;
+}
+
+.container_right-body-hobbies-movie {
+    /* margin-top: 50px; */
+}
