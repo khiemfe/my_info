@@ -5,3 +5,18 @@
     --border-color: #dbdbdb;
     --star-gold-color: #ffce3e;
 }
+
+
+:root {
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
