@@ -724,10 +724,40 @@ body {
     overflow-x: scroll;
     height: 300px;
     padding: 0 10px;
+    align-items: center;
+    position: relative;
+    /* transition: all 0.5s; */
 }
 
 .container_right-body-hobbies-football-player::-webkit-scrollbar {
     display: none;
+    transition: all 1s;
+}
+
+.container_right-body-hobbies-football-player-icon {
+    background-color: var(--white-color);
+    z-index: 100;
+    font-size: 18px;
+    color: #000;
+    position: fixed;
+    padding: 7px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.container_right-body-hobbies-football-player-icon:first-child {
+    left: 10px;
+    display: none;
+}
+
+.container_right-body-hobbies-football-player-icon:last-child {
+    right: 10px;
+}
+
+.container_right-body-hobbies-football-player-icon:hover {
+    box-shadow: 1px 2px 5px 1px #333;
+    transform: scale(1.1);
 }
 
 .container_right-body-hobbies-football-player-link {
