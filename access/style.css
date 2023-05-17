@@ -338,6 +338,31 @@ body {
     margin-top: 40px;
 }
 
+.container_right-body-product-title {
+
+}
+
+.container_right-body-product-list {
+    margin-top: 40px;
+}
+
+.container_right-body-product-item {
+    max-width: 50%;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container_right-body-product-item:hover .container_right-body-product-item-img{
+    transform: scale(1.05);
+}
+
+.container_right-body-product-item-img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+
 .container_right-body-sayings {
     margin-top: 40px;
 }
@@ -731,7 +756,7 @@ body {
 
 .container_right-body-hobbies-football-player::-webkit-scrollbar {
     display: none;
-    transition: all 1s;
+    /* transition: all 1s; */
 }
 
 .container_right-body-hobbies-football-player-icon {
@@ -914,11 +939,12 @@ body {
 /* xem phim */
 
 .container_right-body-hobbies-movie-title {
-    margin-top: 40px;
+    margin-top: 50px;
+    display: inline-block;
 }
 
 .container_right-body-hobbies-item-movie-list {
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
 }
@@ -1023,6 +1049,26 @@ body {
 }
 
 .card:hover .character {
+    width: 128%;
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+    height: 100%;
+}
+
+.container_right-body-hobbies-item-movie-item.boruto .card:hover .character {
+    width: 180%;
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
+
+.container_right-body-hobbies-item-movie-item.spider .card:hover .character {
+    width: 146%;
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
+
+.container_right-body-hobbies-item-movie-item.captain .card:hover .character {
+    width: 120%;
     opacity: 1;
     transform: translate3d(0%, -30%, 100px);
 }

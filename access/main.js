@@ -89,6 +89,7 @@ var icon_right = $('.container_right-body-hobbies-football-player-icon.right')
 
 var player = $('.container_right-body-hobbies-football-player')
 console.log(player)
+
 // var count = 0
 // icon_right.onclick = function () {
 //     player.scrollBy(300, 0);
@@ -106,19 +107,35 @@ console.log(player)
 //         icon_right.style.display = 'none'
 //     }
 // }
+
+
+player.addEventListener('scroll', function() {
+    if(player.scrollLeft > 0) {
+        console.log(player.scrollLeft)
+        icon_left.style.display = 'block'
+
+    }
+    if (player.scrollLeft <= 1) {
+        icon_left.style.display = 'none'
+        icon_right.style.display = 'block'
+    }
+    if(player.scrollLeft >= 637) {
+        icon_right.style.display = 'none'
+    }
+})
+
 var scrollWidth
 icon_right.onclick = function () {
     player.scrollBy(300, 0);
+    player.scrollBy({
+        behavior: "smooth"
+    });
     icon_left.style.display = 'block'
 
     console.log(player.scrollLeft)
     icon_left.onclick = function () {
         count = 0
         player.scrollTo(0, 1);
-        if (player.scrollLeft == 0) {
-            icon_left.style.display = 'none'
-            icon_right.style.display = 'block'
-        }
     }
     // PC
     if(player.scrollLeft >= 637) {
@@ -127,6 +144,8 @@ icon_right.onclick = function () {
 }
 
 console.log(player.scrollWidth)
+
+
 
 
 
