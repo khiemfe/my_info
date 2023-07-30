@@ -1,0 +1,293 @@
+/* 
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .schedule-detail {
+        height: 500px !important;
+    }
+} */
+
+@media(min-width: 1750px) {
+    
+}
+
+@media (max-width: 1280px) {
+    
+}
+
+@media (min-width: 728px) and (max-width: 1025px) {
+    
+}
+
+@media only screen and (min-width: 63.9375em) and (max-width: 1250px) {
+    
+}
+
+@media (min-width: 55em) and (max-width: 63.9375em) {
+
+    
+}
+
+
+/* Mobile and Tablet */
+@media only screen and (max-width: 63.9375em) {
+
+    .header {
+        display: block;
+    }
+
+    .header_left, .header_right {
+        width: 100%;
+        border: none;
+        margin: 0;
+    }
+
+    .header_right {
+        margin-top: 20px;
+        padding: 20px !important;
+    }
+
+    .header_right-list {
+        margin-top: 20px;
+    }
+
+    .header_left {
+        display: block;
+    }
+
+    .header_left-avt {
+        width: 50%;
+        margin: auto;
+    }
+
+    .header_left-info {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .header_left-info-name {
+        font-size: 30px;
+    }
+
+    .header_left-info-job {
+        font-size: 18px;
+    }
+
+    .header_left-info-social_network {
+        justify-content: center;
+    }
+
+    .header_left-info-social_network-embrace {
+        padding: 0 15px;
+    }
+
+    .container {
+        /* margin-bottom: 100px; */
+    }
+
+    .container_right {
+        margin-bottom: 200px;
+    }
+
+    .container_left {
+        margin: 0;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        padding: 0;
+        transition: all 0.5s;
+    }
+
+    .container_left.transform {
+        transform: translateY(100%);
+    }
+
+    .container_left-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 0;
+        padding: 30px 50px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .container_left-self {
+        margin: 0;
+    }
+
+    .container_right-body-product-list {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .container_right-body-hobbies-football-fan {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container_right-body-hobbies-football-fan-link {
+        padding: 8px;
+    }
+
+    .container_right-body-hobbies-football-fan-link:hover {
+        transform: scale(1);
+    }
+
+    .container_right-body-hobbies-football-fan-link ul  {
+        display: none;
+    }
+
+    .container_right-body-hobbies-football-player-link-name span::before {
+        width: 100%;
+        border-right: 4px solid var(--clr);
+        -webkit-text-stroke: 1px var(--clr);
+        filter: drop-shadow(0 0 15px var(--clr));
+        background-color: var(--white-color);
+        border-radius: 5px;
+    }
+
+    .container_right-body-hobbies-football-player-icon.right,
+    .container_right-body-hobbies-football-player-icon.left {
+        display: none !important;
+    }
+    
+    .container_right-body-hobbies-item-movie-item {
+        display: contents;
+    }
+
+    .container_right-body-hobbies-item-movie-item .card {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .container_right-body-hobbies-item-movie-item .card .title {
+        width: 50%;
+    }
+    
+    .container_right-body-hobbies-item-movie-item .card .character {
+        display: none;
+    }
+
+    .card:hover .wrapper {
+        transform: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+
+    .card:hover .wrapper::before,
+    .wrapper::after {
+        opacity: 0;
+    }
+
+    .card:hover .wrapper::after {
+        display: none;
+    }
+
+    .card:hover .title {
+        transform: none;
+    }
+
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 740px) {
+
+    .my_info {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .header {
+        padding: 40px 20px;
+    }
+    .header_right {
+        display: block;
+        text-align: center;
+    }
+
+    .container_right {
+        margin-bottom: 120px;
+    }
+
+    .container_left-self {
+        width: 60px;
+        height: 60px;
+        padding: 7px 0;
+    }
+
+    .container_left-self-icon lord-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .container_left-self-text {
+        display: none;
+    }
+
+    .container_left-body {
+        padding: 20px;
+    }
+    
+    .container_right-body {
+        padding: 40px 20px;
+    }
+
+    .container_right-body-sayings-item-img {
+        width: 50px;
+    }
+
+    .container_right-body-sayings-item-text h3 {
+        font-size: 18px;
+    }
+
+    .container_right-body-sayings-item-text p {
+        font-size: 12px;
+    }
+
+    .container_right-body-hobbies-part-title {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .container_right-body-hobbies-part-title i {
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .container_right-body-hobbies-football-fan {
+        display: block;
+    }
+
+    .container_right-body-hobbies-football-fan-link-img {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 740px) and (min-width: 500px) {
+    
+}
+
+@media only screen and (max-width: 440px) {
+    
+}
+
+@media only screen and (max-width: 380px) {
+    
+}
+
+@media only screen and (max-width: 330px) {
+
+    
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+
+}

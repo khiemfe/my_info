@@ -44,14 +44,14 @@ selfs.forEach((self, index) => {
 })
 
 
-// Những câu nói cảm hứng cho mình
+// Những câu nói cảm hứng
 var sayings = $$('.container_right-body-sayings-item')
 var sayings_lines = $$('.container_right-body-sayings-item-line-item')
 
 
 var indexcurent = 0;
 
-setInterval(function(){
+function timeNextPage() {
     sayings[indexcurent].classList.remove('active');
     sayings_lines[indexcurent].classList.remove('active');
     indexcurent += 1
@@ -60,6 +60,10 @@ setInterval(function(){
     }
     sayings[indexcurent].classList.add('active')
     sayings_lines[indexcurent].classList.add('active')
+}
+
+var resetTime = setInterval(function(){
+    timeNextPage()
 },5000)
 
 var sayings_left = $('.container_right-body-sayings-icon-left')
@@ -74,6 +78,10 @@ sayings_left.onclick = function() {
     indexcurent -= 1
     sayings[indexcurent].classList.add('active')
     sayings_lines[indexcurent].classList.add('active')
+    clearInterval(resetTime)
+    resetTime = setInterval(function(){
+        timeNextPage()
+    },5000)
 }
 
 sayings_right.onclick = function() {
@@ -85,6 +93,10 @@ sayings_right.onclick = function() {
     }
     sayings[indexcurent].classList.add('active')
     sayings_lines[indexcurent].classList.add('active')
+    clearInterval(resetTime)
+    resetTime = setInterval(function(){
+        timeNextPage()
+    },5000)
 }
 
 
@@ -135,7 +147,6 @@ var icon_left = $('.container_right-body-hobbies-football-player-icon.left')
 var icon_right = $('.container_right-body-hobbies-football-player-icon.right')
 
 var player = $('.container_right-body-hobbies-football-player')
-// console.log(player)
 
 // var count = 0
 // icon_right.onclick = function () {
@@ -148,17 +159,12 @@ var player = $('.container_right-body-hobbies-football-player')
 //         icon_left.style.display = 'none'
 //         icon_right.style.display = 'block'
 //     }
-    
 //     count += 1
 //     if(count == 3) {
 //         icon_right.style.display = 'none'
 //     }
 // }
 
-//khi click vào ô Sở Thích thì nó sẽ trở lại vị trí ban đầu
-hobbies_modal.addEventListener('click', function() {
-    player.scrollTo(0, 1);
-})
 
 player.addEventListener('scroll', function() {
     if(player.scrollLeft > 0) {
@@ -173,9 +179,8 @@ player.addEventListener('scroll', function() {
     }
 })
 
-// var scrollWidth
 icon_right.onclick = function () {
-    player.scrollBy(300, 0);
+    player.scrollBy(1000, 0);
     icon_left.style.display = 'block'
 
     console.log(player.scrollLeft)
@@ -189,7 +194,41 @@ icon_right.onclick = function () {
     }
 }
 
-// console.log(player.scrollWidth)
+//khi click vào ô Sở Thích thì nó sẽ trở lại vị trí ban đầu
+hobbies_modal.addEventListener('click', function() {
+    player.scrollTo(0, 1);
+})
+
+window.onscroll = function() {
+    if (window.scrollTop > (document.body.scrollHeight / 2)) {
+        console.log("Bạn đã cuộn xuống 50% trang web!")
+    }
+}
+
+
+// var lastScrollPosition = 0;
+// window.addEventListener("scroll", function() {
+//     var scrollDirection = window.scrollY < lastScrollPosition ? "down" : "up";
+//     lastScrollPosition = window.scrollY;
+  
+//     if (scrollDirection == "down") {
+//         console.log(1)
+//     } else {
+//         console.log(2)
+//     }
+//   });
+//or
+
+const transform = document.querySelector('.container_left')
+var lastScrollPosition = 0;
+window.addEventListener("scroll", function() {    
+    if (window.scrollY > lastScrollPosition) {
+        transform.classList.remove("transform")
+    } else {
+        transform.classList.add("transform")
+    }
+    lastScrollPosition = window.scrollY;
+  });
 
 
 
