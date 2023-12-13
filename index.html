@@ -1,603 +1,946 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Info</title>
-    <link rel="stylesheet" href="./access/style.css">
-    <link rel="stylesheet" href="./access/grid.css">
-    <link rel="stylesheet" href="./access/base.css">
-    <link rel="stylesheet" href="./access/responsive.css">
-    <link rel="stylesheet" href="./access/fonts/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
-    <link rel="stylesheet" href="./access/fonts/themify-icons-font/themify-icons/themify-icons.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
+    <link rel="stylesheet" href="./access/style.css" />
+    <link rel="stylesheet" href="./access/grid.css" />
+    <link rel="stylesheet" href="./access/base.css" />
+    <link rel="stylesheet" href="./access/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="./access/fonts/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./access/fonts/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="circle_1"></div>
     <div class="circle_2"></div>
     <div class="grid wide">
-        <div class="my_info">
-            <div class="header">
-                <div class="clock_wrapper">
-                    <div class="display">
-                        <div id="time"></div>
-                    </div>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="header_left">
-                    <div class="header_left-avt">
-                        <img src="./access/img/khiem2.jpg" alt="">
-                    </div>
-                    <div class="header_left-info">
-                        <h1 class="header_left-info-name">
-                            Trịnh Ngọc Khiêm
-                        </h1>
-                        <h3 class="header_left-info-job">
-                            Sinh viên
-                        </h3>
-                        <div class="header_left-info-social_network">
-                            <div class="header_left-info-social_network-embrace fb">
-                                <!-- target="_blank" là click vào link mở ra tab mới -->
-                                <a href="https://www.facebook.com/khiem.ngoc.142240" target="_blank" class="header_left-info-social_network-item fb">
-                                    <div class="hover-social_network fb">Facebook</div>
-                                    <i class="header_left-info-social_network-item-icon fa-brands fa-facebook-f"></i>
-                                </a>
-                            </div>
-                            <div class="header_left-info-social_network-embrace tiktok">
-                                <a href="https://www.tiktok.com/@cuuvi_kurama" target="_blank" class="header_left-info-social_network-item tiktok">
-                                    <div class="hover-social_network tiktok">Tiktok</div>
-                                    <i class="header_left-info-social_network-item-icon fa-brands fa-tiktok"></i>
-                                </a>
-                            </div>
-                            <div class="header_left-info-social_network-embrace ins">
-                                <a href="https://www.instagram.com/khiem.ngoc.142240/" target="_blank" class="header_left-info-social_network-item ins">
-                                    <div class="hover-social_network ins">Instagram</div>
-                                    <i class="header_left-info-social_network-item-icon fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                            <div class="header_left-info-social_network-embrace github">
-                                <a href="https://github.com/khiemfe" target="_blank" class="header_left-info-social_network-item github">
-                                    <div class="hover-social_network github">Github</div>
-                                    <i class="header_left-info-social_network-item-icon fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="header_right row">
-                    <div class="header_right-list col l-6 m-6">
-                        <h2 class="header_right-item-title">
-                            Email
-                            <i class="fa-solid fa-envelope"></i>
-                        </h2>
-                        <p class="header_right-item-text">
-                            rintrinh511@gmail.com
-                        </p>
-                    </div>
-                    <div class="header_right-list col l-6 m-6">
-                        <h2 class="header_right-item-title">
-                            Ngày sinh
-                            <i class="fa-solid fa-cake-candles"></i>
-                        </h2>
-                        <p class="header_right-item-text">
-                            05/11/2002
-                        </p>
-                    </div>
-                    <div class="header_right-list col l-6 m-6">
-                        <h2 class="header_right-item-title">
-                            Số điện thoại
-                            <i class="fa-solid fa-phone"></i>
-                        </h2>
-                        <p class="header_right-item-text">
-                            0353454***
-                        </p>
-                    </div>
-                    <div class="header_right-list col l-6 m-6">
-                        <h2 class="header_right-item-title">
-                            Địa chỉ
-                            <i class="fa-solid fa-house"></i>
-                        </h2>
-                        <p class="header_right-item-text">
-                            Tam Kỳ, Quảng Nam
-                        </p>
-                    </div>
-                </div>
+      <div class="my_info">
+        <div class="header">
+          <div class="clock_wrapper">
+            <div class="display">
+              <div id="time"></div>
             </div>
-
-            <div class="container row">
-                <div class="container_left transform col l-2 m-12">
-                    <div class="container_left-body">
-                        <div class="container_left-self active">
-                            <div class="container_left-self-icon">
-                                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/amxnacxd.json"
-                                    trigger="hover"
-                                    colors="primary:#4be1ec,secondary:#cb5eee"
-                                    style="width:70px;height:70px">
-                                </lord-icon>
-                            </div>
-                            <h3 class="container_left-self-text">
-                                Bản thân
-                            </h3>
-                        </div>
-                        <div class="container_left-self">
-                            <div class="container_left-self-icon">
-                                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/hursldrn.json"
-                                    trigger="morph"
-                                    colors="primary:#4be1ec,secondary:#cb5eee"
-                                    style="width:70px;height:70px">
-                                </lord-icon>
-                            </div>
-                            <h3 class="container_left-self-text">
-                                Học vấn
-                            </h3>
-                        </div>
-                        <div class="container_left-self hoobbies">
-                            <div class="container_left-self-icon">
-                                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/ytuosppc.json"
-                                    trigger="hover"
-                                    colors="primary:#4be1ec,secondary:#cb5eee"
-                                    style="width:70px;height:70px">
-                                </lord-icon>
-                            </div>
-                            <h3 class="container_left-self-text">
-                                Sở thích
-                            </h3>
-                        </div>
-                        <div class="container_left-self">
-                            <div class="container_left-self-icon">
-                                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/xqgancly.json"
-                                    trigger="hover"
-                                    colors="primary:#4be1ec,secondary:#cb5eee"
-                                    style="width:70px;height:70px">
-                                </lord-icon>
-                            </div>
-                            <h3 class="container_left-self-text">
-                                Mục tiêu
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="container_right col l-10 m-12">
-                    <!-- Bản thân -->
-                    <div class="container_right-body active">
-                        <div class="container_right-body-introduce">
-                            <h1 class="container_right-body-introduce-title">
-                                Giới thiệu
-                            </h1>
-                            <p class="container_right-body-introduce-text">
-                                - Mình là sinh viên của trường Đại Học Duy Tân Đà Nẵng. Mình đang học tập, theo đuổi ngành Công Nghệ Thông Tin.
-                                <!-- <br> -->
-                                <br>
-                                - Hiện tại mình đang theo học khóa học tại F8 và đã được khoảng 4 tháng theo đuổi lập trình Web.
-                            </p>
-                        </div>
-                        <div class="container_right-body-product">
-                            <h1 class="container_right-body-product-title">
-                                Một số giao diện sau khi học xong khóa Html/Css cơ bản
-                            </h1>
-                            <div class="container_right-body-product-list">
-                                <a href="https://https://khiemfe.github.io/w3_band/" target="_blank" class="container_right-body-product-item l-6 m-12 c-12">
-                                    <img src="./access/img/band.png" alt="" class="container_right-body-product-item-img">
-                                </a>
-                                <a href="https://https://khiemfe.github.io/soppi/" target="_blank" class="container_right-body-product-item l-6 m-12 c-12">
-                                    <img src="./access/img/shoppe.png" alt="" class="container_right-body-product-item-img">
-                                </a>
-                                <a href="https://khiemfe.github.io/travel-love/" target="_blank" class="container_right-body-product-item l-6 m-12 c-12">
-                                    <img src="./access/img/travel-love.jpg" alt="" class="container_right-body-product-item-img">
-                                </a>
-                                <a href="https://khiemfe.github.io/resort/" target="_blank" class="container_right-body-product-item l-6 m-12 c-12">
-                                    <img src="./access/img/resort.jpg" alt="" class="container_right-body-product-item-img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="container_right-body-sayings">
-                            <h1 class="container_right-body-sayings-title">
-                                Những câu nói cảm hứng cho mình
-                            </h1>
-                            <ul class="container_right-body-sayings-list">
-                                <i class="container_right-body-sayings-icon-left fa-solid fa-chevron-left"></i>
-                                <li class="container_right-body-sayings-item active">
-                                    <img src="./access/img/itachi.jpg" alt="" class="container_right-body-sayings-item-img">
-                                    <div class="container_right-body-sayings-item-text">
-                                        <h3>Uchiha Itachi</h3>
-                                        <p>
-                                            "Không phải trở thành Hokage sẽ khiến mọi người công nhận cậu, chính vì được mọi người công nhận nên cậu mới trở thành Hokage."
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="container_right-body-sayings-item">
-                                    <img src="./access/img/zuckerberg.jpg" alt="" class="container_right-body-sayings-item-img">
-                                    <div class="container_right-body-sayings-item-text">
-                                        <h3>Mark Zuckerberg</h3>
-                                        <p>
-                                            "Rủi ro lớn nhất là khi bạn không chấp nhận bất kỳ rủi ro nào. Trong một thế giới thay đổi thực sự nhanh chóng, chiến lược duy nhất được đảm bảo thất bại là không chấp nhận rủi ro."
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="container_right-body-sayings-item">
-                                    <img src="./access/img/elon-musk.jpg" alt="" class="container_right-body-sayings-item-img">
-                                    <div class="container_right-body-sayings-item-text">
-                                        <h3>Elon Musk</h3>
-                                        <p>
-                                            "Công nghệ là thứ gần gũi nhất với ma thuật còn tồn tại trên thế giới này."                                        </p>
-                                    </div>
-                                </li>
-                                <i class="container_right-body-sayings-icon-right fa-solid fa-chevron-right"></i>
-                            </ul>
-                            <ul class="container_right-body-sayings-item-line">
-                                <li class="container_right-body-sayings-item-line-item active"></li>
-                                <li class="container_right-body-sayings-item-line-item"></li>
-                                <li class="container_right-body-sayings-item-line-item"></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Học vấn -->
-                    <div class="container_right-body ">
-                        <div class="container_right-body-education">
-                            <h1 class="container_right-body-education-title">
-                                Học vấn
-                            </h1>
-                            <div class="container_right-body-education-study">
-                                <h2 class="container_right-body-education-study-title">
-                                    <i class="fa-solid fa-graduation-cap"></i>
-                                    Giáo dục
-                                </h2>
-                                <div class="container_right-body-education-study-title-detail">
-                                    <div class="container_right-body-education-study-title-detail-part1">
-                                        <h3 class="container_right-body-education-study-place">
-                                            Trường Đại Học Duy Tân Đà Nẵng
-                                        </h3>
-                                        <p class="container_right-body-education-study-text">
-                                            2020 - nay
-                                            <br>
-                                            <br>
-                                            Từ năm 2020 đến 2023, mình học về chuyên ngành Big Data & Machine Learning. Tuy nhiên học được khoảng 2-3 năm thì thấy bản thân không phù hợp với chuyên ngành này, nên mình quyết định tự tìm hiểu, 
-                                            học hỏi cách làm một trang web. Sau 1 tháng tự tìm tòi và học hỏi thì mình thấy con đường trở thành một lập trình Web Front-end khá phù hợp với bản thân, mình cảm thấy khá thích thú khi học về Web, và có thể đây chính là con đường mà tương lai mình sẽ hướng tới. Là trở thành một Web Developer.
-                                        </p>
-                                    </div>
-                                    <div class="container_right-body-education-study-title-detail-part1">
-                                        <h3 class="container_right-body-education-study-place">
-                                            F8
-                                        </h3>
-                                        <p class="container_right-body-education-study-text">
-                                            20/02/2023 - nay
-                                            <br>
-                                            <br>
-                                            Được biết đến trang Web dạy học của anh Sơn thật sự rất là tuyệt vời mình học được những kĩ năng kiến thức căn bản đến nâng cao để trở thành một Web Developer, ở trong đây có một người giáo viên dạy rất tận tâm, rất là dễ hiểu.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container_right-body-education-study">
-                                <h2 class="container_right-body-education-study-title">
-                                    <i class="ti-briefcase"></i>
-                                    Kinh nghiệm
-                                </h2>
-                                <div class="container_right-body-education-study-title-detail">
-                                    <div class="container_right-body-education-study-title-detail-part2">
-                                        <h3 class="container_right-body-education-study-place">
-                                            Học Web
-                                        </h3>
-                                        <p class="container_right-body-education-study-text">
-                                            20/02/2023 - nay
-                                            <br>
-                                            <br>
-                                            Mình đã nắm được các kiến thức nền tảng của HTML, CSS và Javascrpit.
-                                        </p>
-                                    </div>
-                                    <div class="container_right-body-education-study-title-detail-part2">
-                                        <h3 class="container_right-body-education-study-place">
-                                            Làm việc nhóm
-                                        </h3>
-                                        <p class="container_right-body-education-study-text">
-                                            2020 - nay
-                                            <br>
-                                            <br>
-                                            Trong khoảng thời gian học tập tại trường Đại Học Duy Tân thì mình cũng đã có được ít nhiều kinh nghiệm về làm việc nhóm. Cách phân chia công việc và cùng nhau thực hiện để năng suất công việc và thành tích của nhóm được tốt hơn
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                    <!-- Sở thích -->
-                    <div class="container_right-body ">
-                        <div class="container_right-body-hobbies">
-                            <h1 class="container_right-body-hobbies-title">
-                                Sở thích
-                            </h1>
-                            <div class="container_right-body-hobbies-part">
-                                <h2 class="container_right-body-hobbies-part-title active">
-                                    <i class="fa-regular fa-futbol"></i>
-                                    Bóng đá
-                                </h2>
-                                <h2 class="container_right-body-hobbies-part-title ">
-                                    <i class='bx bxs-movie-play'></i>
-                                    Xem phim
-                                </h2>
-                                <h2 class="container_right-body-hobbies-part-title ">
-                                    <i class="fa-solid fa-gamepad"></i>
-                                    Chơi game
-                                </h2>
-                                <div class="container_right-body-hobbies-part-line"></div>
-                            </div>
-
-                            <div class="container_right-body-hobbies-list">
-                                <!-- Bóng đá -->
-                                <div class="container_right-body-hobbies-item active">
-                                    <h3 class="container_right-body-hobbies-football-fan-title">
-                                        <i class="fa-solid fa-heart"></i>
-                                        Đội tuyển & CLB yêu thích
-                                    </h3>
-                                    <div class="container_right-body-hobbies-football-fan">
-                                        <a href="" class="container_right-body-hobbies-football-fan-link l-3 m-6 c-12">
-                                            <!-- <h4>ĐTQG Việt Nam</h4> -->
-                                            <ul>
-                                                <li>Đ</li>
-                                                <li>T</li>
-                                                <li>Q</li>
-                                                <li>G</li>
-                                                <li class="width_5"> </li>
-                                                <li>V</li>
-                                                <li>i</li>
-                                                <li>ệ</li>
-                                                <li>t</li>
-                                                <li class="width_5"> </li>
-                                                <li>N</li>
-                                                <li>a</li>
-                                                <li>m</li>
-                                            </ul>
-                                            <img src="./access/img/dtbd_vn.jpg" alt="" class="container_right-body-hobbies-football-fan-link-img">
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-fan-link l-3 m-6 c-12">
-                                            <!-- <h4>FC Barcelona</h4> -->
-                                            <ul>
-                                                <li>F</li>
-                                                <li>C</li>
-                                                <li class="width_5"> </li>
-                                                <li>B</li>
-                                                <li>a</li>
-                                                <li>r</li>
-                                                <li>c</li>
-                                                <li>e</li>
-                                                <li>l</li>
-                                                <li>o</li>
-                                                <li>n</li>
-                                                <li>a</li>
-                                            </ul>
-                                            <img src="./access/img/barca.jpg" alt="" class="container_right-body-hobbies-football-fan-link-img">
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-fan-link l-3 m-6 c-12">
-                                            <!-- <h4>ĐT Argentina</h4> -->
-                                            <ul>
-                                                <li>Đ</li>
-                                                <li>T</li>
-                                                <li class="width_5"> </li>
-                                                <li>A</li>
-                                                <li>r</li>
-                                                <li>g</li>
-                                                <li>e</li>
-                                                <li>n</li>
-                                                <li>t</li>
-                                                <li>i</li>
-                                                <li>n</li>
-                                                <li>a</li>
-                                            </ul>
-                                            <img src="./access/img/Argentina.jpg" alt="" class="container_right-body-hobbies-football-fan-link-img">
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-fan-link l-3 m-6 c-12">
-                                            <!-- <h4>FC Man City</h4> -->
-                                            <ul>
-                                                <li>F</li>
-                                                <li>C</li>
-                                                <li class="width_5"> </li>
-                                                <li>M</li>
-                                                <li>a</li>
-                                                <li>n</li>
-                                                <li class="width_5"> </li>
-                                                <li>C</li>
-                                                <li>i</li>
-                                                <li>t</li>
-                                                <li>y</li>
-                                            </ul>
-                                            <img src="./access/img/mancity.jpg" alt="" class="container_right-body-hobbies-football-fan-link-img">
-                                        </a>
-                                    </div>
-                                    <h3 class="container_right-body-hobbies-football-fan-title">
-                                        <i class="fa-solid fa-heart"></i>
-                                        Cầu thủ yêu thích
-                                    </h3>
-                                    <div class="container_right-body-hobbies-football-player">
-                                        <i class="container_right-body-hobbies-football-player-icon left fa-sharp fa-solid fa-chevron-left"></i>
-
-                                        <a href="" class="container_right-body-hobbies-football-player-link">
-                                            <div class="container_right-body-hobbies-football-player-link-wrapper">
-                                                <img src="./access/img/messi.jpg" alt="" class="container_right-body-hobbies-football-player-link-img">
-                                            </div>
-                                            <div class="container_right-body-hobbies-football-player-link-name" style="--clr:#00ade1">
-                                                <span href="#" data-text="&nbsp;Lionel&nbsp;Messi">&nbsp;Lionel&nbsp;Messi&nbsp;</span>
-                                            </div>
-                                        </a>
-    
-                                        <a href="" class="container_right-body-hobbies-football-player-link">
-                                            <div class="container_right-body-hobbies-football-player-link-wrapper">
-                                                <img src="./access/img/neymar.jpg" alt="" class="container_right-body-hobbies-football-player-link-img">
-                                            </div>
-                                            <div class="container_right-body-hobbies-football-player-link-name" style="--clr:#00ade1">
-                                                <span href="#" data-text="&nbsp;Neymar&nbsp;JR">&nbsp;Neymar&nbsp;JR&nbsp;</span>
-                                            </div>
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-player-link">
-                                            <div class="container_right-body-hobbies-football-player-link-wrapper">
-                                                <img src="./access/img/sutho.jpg" alt="" class="container_right-body-hobbies-football-player-link-img">
-                                            </div>
-                                            <div class="container_right-body-hobbies-football-player-link-name" style="--clr:#00ade1">
-                                                <span href="#" data-text="&nbsp;Luis&nbsp;Suárez">&nbsp;Luis&nbsp;Suárez&nbsp;</span>
-                                            </div>
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-player-link">
-                                            <div class="container_right-body-hobbies-football-player-link-wrapper">
-                                                <img src="./access/img/iniesta.jpg" alt="" class="container_right-body-hobbies-football-player-link-img">
-                                            </div>
-                                            <div class="container_right-body-hobbies-football-player-link-name" style="--clr:#00ade1">
-                                                <span href="#" data-text="&nbsp;A.&nbsp;Iniesta">&nbsp;A.&nbsp;Iniesta&nbsp;</span>
-                                            </div>
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-player-link">
-                                            <div class="container_right-body-hobbies-football-player-link-wrapper">
-                                                <img src="./access/img/kdb.jpg" alt="" class="container_right-body-hobbies-football-player-link-img">
-                                            </div>
-                                            <div class="container_right-body-hobbies-football-player-link-name" style="--clr:#00ade1">
-                                                <span href="#" data-text="&nbsp;De&nbsp;Bruyne">&nbsp;De&nbsp;Bruyne&nbsp;</span>
-                                            </div>
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-player-link">
-                                            <div class="container_right-body-hobbies-football-player-link-wrapper">
-                                                <img src="./access/img/enzo.jpg" alt="" class="container_right-body-hobbies-football-player-link-img">
-                                            </div>
-                                            <div class="container_right-body-hobbies-football-player-link-name" style="--clr:#00ade1">
-                                                <span href="#" data-text="&nbsp;E.&nbsp;Fernández">&nbsp;E.&nbsp;Fernández&nbsp;</span>
-                                            </div>
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-player-link">
-                                            <div class="container_right-body-hobbies-football-player-link-wrapper">
-                                                <img src="./access/img/torres.jpg" alt="" class="container_right-body-hobbies-football-player-link-img">
-                                            </div>
-                                            <div class="container_right-body-hobbies-football-player-link-name" style="--clr:#00ade1">
-                                                <span href="#" data-text="&nbsp;F.&nbsp;Torres">&nbsp;F.&nbsp;Torres&nbsp;</span>
-                                            </div>
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-player-link">
-                                            <div class="container_right-body-hobbies-football-player-link-wrapper">
-                                                <img src="./access/img/busi.jpeg" alt="" class="container_right-body-hobbies-football-player-link-img">
-                                            </div>
-                                            <div class="container_right-body-hobbies-football-player-link-name" style="--clr:#00ade1">
-                                                <span href="#" data-text="&nbsp;S.&nbsp;Busquets">&nbsp;S.&nbsp;Busquets&nbsp;</span>
-                                            </div>
-                                        </a>
-                                        <a href="" class="container_right-body-hobbies-football-player-link">
-                                            <div class="container_right-body-hobbies-football-player-link-wrapper">
-                                                <img src="./access/img/dimaria.jpg" alt="" class="container_right-body-hobbies-football-player-link-img">
-                                            </div>
-                                            <div class="container_right-body-hobbies-football-player-link-name" style="--clr:#00ade1">
-                                                <span href="#" data-text="&nbsp;A.&nbsp;Dimaría">&nbsp;A.&nbsp;Dimaría&nbsp;</span>
-                                            </div>
-                                        </a>
-                                        <i class="container_right-body-hobbies-football-player-icon right fa-solid fa-angle-right"></i>
-                                    </div>
-                                </div>
-                                <!-- Xem phim -->
-                                <div class="container_right-body-hobbies-item ">
-                                    <h2 class="container_right-body-hobbies-movie-title">
-                                        Naruto & Boruto
-                                    </h2>
-                                    <div class="container_right-body-hobbies-item-movie-list l-12">
-                                        <a href="https://mehoathinh1.com/naruto" target="_blank" class="container_right-body-hobbies-item-movie-item l-4 m-12">
-                                            <div class="card">
-                                                <div class="wrapper">
-                                                    <img src="./access/img/nar-date1.jpg" class="cover-image" />
-                                                </div>
-                                                <img src="./access/img/logo-nar-datte.png" class="title" />
-                                                <img src="./access/img/nar-datte.png" class="character" />
-                                            </div>
-                                        </a>
-                                        <a href="https://mehoathinh1.com/naruto-shippuden" target="_blank" class="container_right-body-hobbies-item-movie-item naruto-shippuden l-4 m-12">
-                                            <div class="card">
-                                                <div class="wrapper">
-                                                    <img src="./access/img/Naruto-1.jpg" class="cover-image" />
-                                                </div>
-                                                <img src="./access/img/naruto-logo.png" class="title" />
-                                                <img src="./access/img/naruto-ts.png" class="character" />
-                                            </div>
-                                        </a>
-                                        <a href="https://mehoathinh1.com/boruto-naruto-the-he-tiep-theo" target="_blank" class="container_right-body-hobbies-item-movie-item boruto l-4 m-12">
-                                            <div class="card">
-                                                <div class="wrapper">
-                                                    <img src="./access/img/boruto-uzumaki.jpg" class="cover-image" />
-                                                </div>
-                                                <img src="./access/img/logo-bor.png" class="title" />
-                                                <img src="./access/img/bor-trongsuot.png" class="character" />
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <h2 class="container_right-body-hobbies-movie-title">
-                                        Marvel
-                                    </h2>
-                                    <div class="container_right-body-hobbies-item-movie-list l-12">
-                                        <a href="https://www.netflix.com/ad-en/title/70080038" target="_blank" class="container_right-body-hobbies-item-movie-item l-4 m-12">
-                                            <div class="card">
-                                                <div class="wrapper">
-                                                    <img src="./access/img/iron-1.jpg" class="cover-image" />
-                                                </div>
-                                                <img src="./access/img/logo-iron.png" class="title" />
-                                                <img src="./access/img/iron-2.png" class="character" />
-                                            </div>
-                                        </a>
-                                        <a href="https://www.netflix.com/vn-en/title/60004481" target="_blank" class="container_right-body-hobbies-item-movie-item spider l-4 m-12">
-                                            <div class="card">
-                                                <div class="wrapper">
-                                                    <img src="./access/img/spider-1.jpg" class="cover-image" />
-                                                </div>
-                                                <img src="./access/img/logo-spider.png" class="title" />
-                                                <img src="./access/img/spider-2.png" class="character" />
-                                            </div>
-                                        </a>
-                                        <a href="https://www.netflix.com/vn-en/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fsearch" target="_blank" class="container_right-body-hobbies-item-movie-item captain l-4 m-12">
-                                            <div class="card">
-                                                <div class="wrapper">
-                                                    <img src="./access/img/captain-1.jpg" class="cover-image" />
-                                                </div>
-                                                <img src="./access/img/logo-captain.png" class="title" />
-                                                <img src="./access/img/captain-2.png" class="character" />
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Chơi game -->
-                                <div class="container_right-body-hobbies-item ">
-                                    <h2 class="container_right-body-hobbies-game-title">
-                                        <i class="fa-solid fa-gamepad"></i>
-                                        Chơi game
-                                    </h2>
-                                    <a href="https://fo4.garena.vn/" target="_blank" class="container_right-body-hobbies-game-fo4">
-                                        <img src="./access/img/fo4.jpg" alt="" class="container_right-body-hobbies-game-fo4-img">
-                                        <div class="container_right-body-hobbies-game-fo4-text">
-                                            <h3>FIFA Online 4</h3>
-                                            <p>Giải trí</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Mục tiêu -->
-                    <div class="container_right-body">
-                        <div class="container_right-body-target">
-                            <h1 style="font-size: 2.8rem;" class="container_right-body-target-title">
-                                Mục tiêu
-                            </h1>
-                            <h2 style="font-size: 2.4rem; margin-top: 30px;">Trở thành lập trình viên Full-Stack <i style="color: red;" class="fa-solid fa-heart"></i></h2>
-                        </div>
-                    </div>
-                </div>
-                
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header_left">
+            <div class="header_left-avt">
+              <img src="./access/img/AnhTheKhiem.jpg" alt="" />
             </div>
+            <div class="header_left-info">
+              <h1 class="header_left-info-name">Trịnh Ngọc Khiêm</h1>
+              <h3 class="header_left-info-job">Sinh viên</h3>
+              <div class="header_left-info-social_network">
+                <div class="header_left-info-social_network-embrace fb">
+                  <!-- target="_blank" là click vào link mở ra tab mới -->
+                  <a
+                    href="https://www.facebook.com/khiem.ngoc.142240"
+                    target="_blank"
+                    class="header_left-info-social_network-item fb"
+                  >
+                    <div class="hover-social_network fb">Facebook</div>
+                    <i
+                      class="header_left-info-social_network-item-icon fa-brands fa-facebook-f"
+                    ></i>
+                  </a>
+                </div>
+                <div class="header_left-info-social_network-embrace tiktok">
+                  <a
+                    href="https://www.tiktok.com/@cuuvi_kurama"
+                    target="_blank"
+                    class="header_left-info-social_network-item tiktok"
+                  >
+                    <div class="hover-social_network tiktok">Tiktok</div>
+                    <i
+                      class="header_left-info-social_network-item-icon fa-brands fa-tiktok"
+                    ></i>
+                  </a>
+                </div>
+                <div class="header_left-info-social_network-embrace ins">
+                  <a
+                    href="https://www.instagram.com/khiem.ngoc.142240/"
+                    target="_blank"
+                    class="header_left-info-social_network-item ins"
+                  >
+                    <div class="hover-social_network ins">Instagram</div>
+                    <i
+                      class="header_left-info-social_network-item-icon fa-brands fa-instagram"
+                    ></i>
+                  </a>
+                </div>
+                <div class="header_left-info-social_network-embrace github">
+                  <a
+                    href="https://github.com/khiemfe"
+                    target="_blank"
+                    class="header_left-info-social_network-item github"
+                  >
+                    <div class="hover-social_network github">Github</div>
+                    <i
+                      class="header_left-info-social_network-item-icon fa-brands fa-github"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header_right row">
+            <div class="header_right-list col l-6 m-6">
+              <h2 class="header_right-item-title">
+                Email
+                <i class="fa-solid fa-envelope"></i>
+              </h2>
+              <p class="header_right-item-text">khiemdev24@gmail.com</p>
+            </div>
+            <div class="header_right-list col l-6 m-6">
+              <h2 class="header_right-item-title">
+                Ngày sinh
+                <i class="fa-solid fa-cake-candles"></i>
+              </h2>
+              <p class="header_right-item-text">05/11/2002</p>
+            </div>
+            <div class="header_right-list col l-6 m-6">
+              <h2 class="header_right-item-title">
+                Số điện thoại
+                <i class="fa-solid fa-phone"></i>
+              </h2>
+              <p class="header_right-item-text">0353454096</p>
+            </div>
+            <div class="header_right-list col l-6 m-6">
+              <h2 class="header_right-item-title">
+                Địa chỉ
+                <i class="fa-solid fa-house"></i>
+              </h2>
+              <p class="header_right-item-text">Tam Kỳ, Quảng Nam</p>
+            </div>
+          </div>
         </div>
+
+        <div class="container row">
+          <div class="container_left transform col l-2 m-12">
+            <div class="container_left-body">
+              <div class="container_left-self active">
+                <div class="container_left-self-icon">
+                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/amxnacxd.json"
+                    trigger="hover"
+                    colors="primary:#4be1ec,secondary:#cb5eee"
+                    style="width: 70px; height: 70px"
+                  >
+                  </lord-icon>
+                </div>
+                <h3 class="container_left-self-text">Bản thân</h3>
+              </div>
+              <div class="container_left-self">
+                <div class="container_left-self-icon">
+                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/hursldrn.json"
+                    trigger="morph"
+                    colors="primary:#4be1ec,secondary:#cb5eee"
+                    style="width: 70px; height: 70px"
+                  >
+                  </lord-icon>
+                </div>
+                <h3 class="container_left-self-text">Học vấn</h3>
+              </div>
+              <div class="container_left-self hoobbies">
+                <div class="container_left-self-icon">
+                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/ytuosppc.json"
+                    trigger="hover"
+                    colors="primary:#4be1ec,secondary:#cb5eee"
+                    style="width: 70px; height: 70px"
+                  >
+                  </lord-icon>
+                </div>
+                <h3 class="container_left-self-text">Sở thích</h3>
+              </div>
+              <div class="container_left-self">
+                <div class="container_left-self-icon">
+                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/xqgancly.json"
+                    trigger="hover"
+                    colors="primary:#4be1ec,secondary:#cb5eee"
+                    style="width: 70px; height: 70px"
+                  >
+                  </lord-icon>
+                </div>
+                <h3 class="container_left-self-text">Mục tiêu</h3>
+              </div>
+            </div>
+          </div>
+          <div class="container_right col l-10 m-12">
+            <!-- Bản thân -->
+            <div class="container_right-body active">
+              <div class="container_right-body-introduce">
+                <h1 class="container_right-body-introduce-title">Giới thiệu</h1>
+                <p class="container_right-body-introduce-text">
+                  - Mình là sinh viên của trường Đại Học Duy Tân Đà Nẵng. Mình
+                  đang học tập, theo đuổi ngành Công Nghệ Thông Tin.
+                  <!-- <br> -->
+                  <br />
+                  - Hiện tại mình đang theo học khóa học tại F8 và đã được
+                  khoảng 3 tháng theo đuổi lập trình Web.
+                </p>
+              </div>
+              <div class="container_right-body-product">
+                <h1 class="container_right-body-product-title">
+                  Một số giao diện sau khi học xong khóa Html/Css cơ bản
+                </h1>
+                <div class="container_right-body-product-list">
+                  <a
+                    href="https://khiemfe.github.io/w3_band/"
+                    target="_blank"
+                    class="container_right-body-product-item l-6 m-12 c-12"
+                  >
+                    <img
+                      src="./access/img/band.png"
+                      alt=""
+                      class="container_right-body-product-item-img"
+                    />
+                  </a>
+                  <a
+                    href="https://khiemfe.github.io/web-shoppe/"
+                    target="_blank"
+                    class="container_right-body-product-item l-6 m-12 c-12"
+                  >
+                    <img
+                      src="./access/img/shoppe.png"
+                      alt=""
+                      class="container_right-body-product-item-img"
+                    />
+                  </a>
+                  <a
+                    href="https://khiemfe.github.io/travel-love/"
+                    target="_blank"
+                    class="container_right-body-product-item l-6 m-12 c-12"
+                  >
+                    <img
+                      src="./access/img/travel-love.jpg"
+                      alt=""
+                      class="container_right-body-product-item-img"
+                    />
+                  </a>
+                  <a
+                    href="https://khiemfe.github.io/resort/"
+                    target="_blank"
+                    class="container_right-body-product-item l-6 m-12 c-12"
+                  >
+                    <img
+                      src="./access/img/resort.jpg"
+                      alt=""
+                      class="container_right-body-product-item-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="container_right-body-sayings">
+                <h1 class="container_right-body-sayings-title">
+                  Những câu nói cảm hứng cho mình
+                </h1>
+                <ul class="container_right-body-sayings-list">
+                  <i
+                    class="container_right-body-sayings-icon-left fa-solid fa-chevron-left"
+                  ></i>
+                  <li class="container_right-body-sayings-item active">
+                    <img
+                      src="./access/img/itachi.jpg"
+                      alt=""
+                      class="container_right-body-sayings-item-img"
+                    />
+                    <div class="container_right-body-sayings-item-text">
+                      <h3>Uchiha Itachi</h3>
+                      <p>
+                        "Không phải trở thành Hokage sẽ khiến mọi người công
+                        nhận cậu, chính vì được mọi người công nhận nên cậu mới
+                        trở thành Hokage."
+                      </p>
+                    </div>
+                  </li>
+                  <li class="container_right-body-sayings-item">
+                    <img
+                      src="./access/img/zuckerberg.jpg"
+                      alt=""
+                      class="container_right-body-sayings-item-img"
+                    />
+                    <div class="container_right-body-sayings-item-text">
+                      <h3>Mark Zuckerberg</h3>
+                      <p>
+                        "Rủi ro lớn nhất là khi bạn không chấp nhận bất kỳ rủi
+                        ro nào. Trong một thế giới thay đổi thực sự nhanh chóng,
+                        chiến lược duy nhất được đảm bảo thất bại là không chấp
+                        nhận rủi ro."
+                      </p>
+                    </div>
+                  </li>
+                  <li class="container_right-body-sayings-item">
+                    <img
+                      src="./access/img/elon-musk.jpg"
+                      alt=""
+                      class="container_right-body-sayings-item-img"
+                    />
+                    <div class="container_right-body-sayings-item-text">
+                      <h3>Elon Musk</h3>
+                      <p>
+                        "Công nghệ là thứ gần gũi nhất với ma thuật còn tồn tại
+                        trên thế giới này."
+                      </p>
+                    </div>
+                  </li>
+                  <i
+                    class="container_right-body-sayings-icon-right fa-solid fa-chevron-right"
+                  ></i>
+                </ul>
+                <ul class="container_right-body-sayings-item-line">
+                  <li
+                    class="container_right-body-sayings-item-line-item active"
+                  ></li>
+                  <li class="container_right-body-sayings-item-line-item"></li>
+                  <li class="container_right-body-sayings-item-line-item"></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Học vấn -->
+            <div class="container_right-body">
+              <div class="container_right-body-education">
+                <h1 class="container_right-body-education-title">Học vấn</h1>
+                <div class="container_right-body-education-study">
+                  <h2 class="container_right-body-education-study-title">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Giáo dục
+                  </h2>
+                  <div
+                    class="container_right-body-education-study-title-detail"
+                  >
+                    <div
+                      class="container_right-body-education-study-title-detail-part1"
+                    >
+                      <h3 class="container_right-body-education-study-place">
+                        Trường Đại Học Duy Tân Đà Nẵng
+                      </h3>
+                      <p class="container_right-body-education-study-text">
+                        2020 - nay
+                        <br />
+                        <br />
+                        Từ năm 2020 đến 2023, mình học về chuyên ngành Big Data
+                        & Machine Learning. Tuy nhiên học được khoảng 2-3 năm
+                        thì thấy bản thân không phù hợp với chuyên ngành này,
+                        nên mình quyết định tự tìm hiểu, học hỏi cách làm một
+                        trang web. Sau 1 tháng tự tìm tòi và học hỏi thì mình
+                        thấy con đường trở thành một lập trình Web Front-end khá
+                        phù hợp với bản thân, mình cảm thấy khá thích thú khi
+                        học về Web, và có thể đây chính là con đường mà tương
+                        lai mình sẽ hướng tới. Là trở thành một Web Developer.
+                      </p>
+                    </div>
+                    <div
+                      class="container_right-body-education-study-title-detail-part1"
+                    >
+                      <h3 class="container_right-body-education-study-place">
+                        F8
+                      </h3>
+                      <p class="container_right-body-education-study-text">
+                        20/02/2023 - nay
+                        <br />
+                        <br />
+                        Được biết đến trang Web dạy học của anh Sơn thật sự rất
+                        là tuyệt vời mình học được những kĩ năng kiến thức căn
+                        bản đến nâng cao để trở thành một Web Developer, ở trong
+                        đây có một người giáo viên dạy rất tận tâm, rất là dễ
+                        hiểu.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container_right-body-education-study">
+                  <h2 class="container_right-body-education-study-title">
+                    <i class="ti-briefcase"></i>
+                    Kinh nghiệm
+                  </h2>
+                  <div
+                    class="container_right-body-education-study-title-detail"
+                  >
+                    <div
+                      class="container_right-body-education-study-title-detail-part2"
+                    >
+                      <h3 class="container_right-body-education-study-place">
+                        Học Web
+                      </h3>
+                      <p class="container_right-body-education-study-text">
+                        20/02/2023 - nay
+                        <br />
+                        <br />
+                        Mình đã nắm được các kiến thức nền tảng của HTML, CSS và
+                        Javascrpit.
+                      </p>
+                    </div>
+                    <div
+                      class="container_right-body-education-study-title-detail-part2"
+                    >
+                      <h3 class="container_right-body-education-study-place">
+                        Làm việc nhóm
+                      </h3>
+                      <p class="container_right-body-education-study-text">
+                        2020 - nay
+                        <br />
+                        <br />
+                        Trong khoảng thời gian học tập tại trường Đại Học Duy
+                        Tân thì mình cũng đã có được ít nhiều kinh nghiệm về làm
+                        việc nhóm. Cách phân chia công việc và cùng nhau thực
+                        hiện để năng suất công việc và thành tích của nhóm được
+                        tốt hơn
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Sở thích -->
+            <div class="container_right-body">
+              <div class="container_right-body-hobbies">
+                <h1 class="container_right-body-hobbies-title">Sở thích</h1>
+                <div class="container_right-body-hobbies-part">
+                  <h2 class="container_right-body-hobbies-part-title active">
+                    <i class="fa-regular fa-futbol"></i>
+                    Bóng đá
+                  </h2>
+                  <h2 class="container_right-body-hobbies-part-title">
+                    <i class="bx bxs-movie-play"></i>
+                    Xem phim
+                  </h2>
+                  <h2 class="container_right-body-hobbies-part-title">
+                    <i class="fa-solid fa-gamepad"></i>
+                    Chơi game
+                  </h2>
+                  <div class="container_right-body-hobbies-part-line"></div>
+                </div>
+
+                <div class="container_right-body-hobbies-list">
+                  <!-- Bóng đá -->
+                  <div class="container_right-body-hobbies-item active">
+                    <h3 class="container_right-body-hobbies-football-fan-title">
+                      <i class="fa-solid fa-heart"></i>
+                      Đội tuyển & CLB yêu thích
+                    </h3>
+                    <div class="container_right-body-hobbies-football-fan">
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-fan-link l-3 m-6 c-12"
+                      >
+                        <!-- <h4>ĐTQG Việt Nam</h4> -->
+                        <ul>
+                          <li>Đ</li>
+                          <li>T</li>
+                          <li>Q</li>
+                          <li>G</li>
+                          <li class="width_5"></li>
+                          <li>V</li>
+                          <li>i</li>
+                          <li>ệ</li>
+                          <li>t</li>
+                          <li class="width_5"></li>
+                          <li>N</li>
+                          <li>a</li>
+                          <li>m</li>
+                        </ul>
+                        <img
+                          src="./access/img/dtbd_vn.jpg"
+                          alt=""
+                          class="container_right-body-hobbies-football-fan-link-img"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-fan-link l-3 m-6 c-12"
+                      >
+                        <!-- <h4>FC Barcelona</h4> -->
+                        <ul>
+                          <li>F</li>
+                          <li>C</li>
+                          <li class="width_5"></li>
+                          <li>B</li>
+                          <li>a</li>
+                          <li>r</li>
+                          <li>c</li>
+                          <li>e</li>
+                          <li>l</li>
+                          <li>o</li>
+                          <li>n</li>
+                          <li>a</li>
+                        </ul>
+                        <img
+                          src="./access/img/barca.jpg"
+                          alt=""
+                          class="container_right-body-hobbies-football-fan-link-img"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-fan-link l-3 m-6 c-12"
+                      >
+                        <!-- <h4>ĐT Argentina</h4> -->
+                        <ul>
+                          <li>Đ</li>
+                          <li>T</li>
+                          <li class="width_5"></li>
+                          <li>A</li>
+                          <li>r</li>
+                          <li>g</li>
+                          <li>e</li>
+                          <li>n</li>
+                          <li>t</li>
+                          <li>i</li>
+                          <li>n</li>
+                          <li>a</li>
+                        </ul>
+                        <img
+                          src="./access/img/Argentina.jpg"
+                          alt=""
+                          class="container_right-body-hobbies-football-fan-link-img"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-fan-link l-3 m-6 c-12"
+                      >
+                        <!-- <h4>FC Man City</h4> -->
+                        <ul>
+                          <li>F</li>
+                          <li>C</li>
+                          <li class="width_5"></li>
+                          <li>M</li>
+                          <li>a</li>
+                          <li>n</li>
+                          <li class="width_5"></li>
+                          <li>C</li>
+                          <li>i</li>
+                          <li>t</li>
+                          <li>y</li>
+                        </ul>
+                        <img
+                          src="./access/img/mancity.jpg"
+                          alt=""
+                          class="container_right-body-hobbies-football-fan-link-img"
+                        />
+                      </a>
+                    </div>
+                    <h3 class="container_right-body-hobbies-football-fan-title">
+                      <i class="fa-solid fa-heart"></i>
+                      Cầu thủ yêu thích
+                    </h3>
+                    <div class="container_right-body-hobbies-football-player">
+                      <i
+                        class="container_right-body-hobbies-football-player-icon left fa-sharp fa-solid fa-chevron-left"
+                      ></i>
+
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-player-link"
+                      >
+                        <div
+                          class="container_right-body-hobbies-football-player-link-wrapper"
+                        >
+                          <img
+                            src="./access/img/messi.jpg"
+                            alt=""
+                            class="container_right-body-hobbies-football-player-link-img"
+                          />
+                        </div>
+                        <div
+                          class="container_right-body-hobbies-football-player-link-name"
+                          style="--clr: #00ade1"
+                        >
+                          <span href="#" data-text="&nbsp;Lionel&nbsp;Messi"
+                            >&nbsp;Lionel&nbsp;Messi&nbsp;</span
+                          >
+                        </div>
+                      </a>
+
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-player-link"
+                      >
+                        <div
+                          class="container_right-body-hobbies-football-player-link-wrapper"
+                        >
+                          <img
+                            src="./access/img/neymar.jpg"
+                            alt=""
+                            class="container_right-body-hobbies-football-player-link-img"
+                          />
+                        </div>
+                        <div
+                          class="container_right-body-hobbies-football-player-link-name"
+                          style="--clr: #00ade1"
+                        >
+                          <span href="#" data-text="&nbsp;Neymar&nbsp;JR"
+                            >&nbsp;Neymar&nbsp;JR&nbsp;</span
+                          >
+                        </div>
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-player-link"
+                      >
+                        <div
+                          class="container_right-body-hobbies-football-player-link-wrapper"
+                        >
+                          <img
+                            src="./access/img/sutho.jpg"
+                            alt=""
+                            class="container_right-body-hobbies-football-player-link-img"
+                          />
+                        </div>
+                        <div
+                          class="container_right-body-hobbies-football-player-link-name"
+                          style="--clr: #00ade1"
+                        >
+                          <span href="#" data-text="&nbsp;Luis&nbsp;Suárez"
+                            >&nbsp;Luis&nbsp;Suárez&nbsp;</span
+                          >
+                        </div>
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-player-link"
+                      >
+                        <div
+                          class="container_right-body-hobbies-football-player-link-wrapper"
+                        >
+                          <img
+                            src="./access/img/iniesta.jpg"
+                            alt=""
+                            class="container_right-body-hobbies-football-player-link-img"
+                          />
+                        </div>
+                        <div
+                          class="container_right-body-hobbies-football-player-link-name"
+                          style="--clr: #00ade1"
+                        >
+                          <span href="#" data-text="&nbsp;A.&nbsp;Iniesta"
+                            >&nbsp;A.&nbsp;Iniesta&nbsp;</span
+                          >
+                        </div>
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-player-link"
+                      >
+                        <div
+                          class="container_right-body-hobbies-football-player-link-wrapper"
+                        >
+                          <img
+                            src="./access/img/kdb.jpg"
+                            alt=""
+                            class="container_right-body-hobbies-football-player-link-img"
+                          />
+                        </div>
+                        <div
+                          class="container_right-body-hobbies-football-player-link-name"
+                          style="--clr: #00ade1"
+                        >
+                          <span href="#" data-text="&nbsp;De&nbsp;Bruyne"
+                            >&nbsp;De&nbsp;Bruyne&nbsp;</span
+                          >
+                        </div>
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-player-link"
+                      >
+                        <div
+                          class="container_right-body-hobbies-football-player-link-wrapper"
+                        >
+                          <img
+                            src="./access/img/enzo.jpg"
+                            alt=""
+                            class="container_right-body-hobbies-football-player-link-img"
+                          />
+                        </div>
+                        <div
+                          class="container_right-body-hobbies-football-player-link-name"
+                          style="--clr: #00ade1"
+                        >
+                          <span href="#" data-text="&nbsp;E.&nbsp;Fernández"
+                            >&nbsp;E.&nbsp;Fernández&nbsp;</span
+                          >
+                        </div>
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-player-link"
+                      >
+                        <div
+                          class="container_right-body-hobbies-football-player-link-wrapper"
+                        >
+                          <img
+                            src="./access/img/torres.jpg"
+                            alt=""
+                            class="container_right-body-hobbies-football-player-link-img"
+                          />
+                        </div>
+                        <div
+                          class="container_right-body-hobbies-football-player-link-name"
+                          style="--clr: #00ade1"
+                        >
+                          <span href="#" data-text="&nbsp;F.&nbsp;Torres"
+                            >&nbsp;F.&nbsp;Torres&nbsp;</span
+                          >
+                        </div>
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-player-link"
+                      >
+                        <div
+                          class="container_right-body-hobbies-football-player-link-wrapper"
+                        >
+                          <img
+                            src="./access/img/busi.jpeg"
+                            alt=""
+                            class="container_right-body-hobbies-football-player-link-img"
+                          />
+                        </div>
+                        <div
+                          class="container_right-body-hobbies-football-player-link-name"
+                          style="--clr: #00ade1"
+                        >
+                          <span href="#" data-text="&nbsp;S.&nbsp;Busquets"
+                            >&nbsp;S.&nbsp;Busquets&nbsp;</span
+                          >
+                        </div>
+                      </a>
+                      <a
+                        href=""
+                        class="container_right-body-hobbies-football-player-link"
+                      >
+                        <div
+                          class="container_right-body-hobbies-football-player-link-wrapper"
+                        >
+                          <img
+                            src="./access/img/dimaria.jpg"
+                            alt=""
+                            class="container_right-body-hobbies-football-player-link-img"
+                          />
+                        </div>
+                        <div
+                          class="container_right-body-hobbies-football-player-link-name"
+                          style="--clr: #00ade1"
+                        >
+                          <span href="#" data-text="&nbsp;A.&nbsp;Dimaría"
+                            >&nbsp;A.&nbsp;Dimaría&nbsp;</span
+                          >
+                        </div>
+                      </a>
+                      <i
+                        class="container_right-body-hobbies-football-player-icon right fa-solid fa-angle-right"
+                      ></i>
+                    </div>
+                  </div>
+                  <!-- Xem phim -->
+                  <div class="container_right-body-hobbies-item">
+                    <h2 class="container_right-body-hobbies-movie-title">
+                      Naruto & Boruto
+                    </h2>
+                    <div
+                      class="container_right-body-hobbies-item-movie-list l-12"
+                    >
+                      <a
+                        href="https://mehoathinh1.com/naruto"
+                        target="_blank"
+                        class="container_right-body-hobbies-item-movie-item l-4 m-12"
+                      >
+                        <div class="card">
+                          <div class="wrapper">
+                            <img
+                              src="./access/img/nar-date1.jpg"
+                              class="cover-image"
+                            />
+                          </div>
+                          <img
+                            src="./access/img/logo-nar-datte.png"
+                            class="title"
+                          />
+                          <img
+                            src="./access/img/nar-datte.png"
+                            class="character"
+                          />
+                        </div>
+                      </a>
+                      <a
+                        href="https://mehoathinh1.com/naruto-shippuden"
+                        target="_blank"
+                        class="container_right-body-hobbies-item-movie-item naruto-shippuden l-4 m-12"
+                      >
+                        <div class="card">
+                          <div class="wrapper">
+                            <img
+                              src="./access/img/Naruto-1.jpg"
+                              class="cover-image"
+                            />
+                          </div>
+                          <img
+                            src="./access/img/naruto-logo.png"
+                            class="title"
+                          />
+                          <img
+                            src="./access/img/naruto-ts.png"
+                            class="character"
+                          />
+                        </div>
+                      </a>
+                      <a
+                        href="https://mehoathinh1.com/boruto-naruto-the-he-tiep-theo"
+                        target="_blank"
+                        class="container_right-body-hobbies-item-movie-item boruto l-4 m-12"
+                      >
+                        <div class="card">
+                          <div class="wrapper">
+                            <img
+                              src="./access/img/boruto-uzumaki.jpg"
+                              class="cover-image"
+                            />
+                          </div>
+                          <img src="./access/img/logo-bor.png" class="title" />
+                          <img
+                            src="./access/img/bor-trongsuot.png"
+                            class="character"
+                          />
+                        </div>
+                      </a>
+                    </div>
+
+                    <h2 class="container_right-body-hobbies-movie-title">
+                      Marvel
+                    </h2>
+                    <div
+                      class="container_right-body-hobbies-item-movie-list l-12"
+                    >
+                      <a
+                        href="https://www.netflix.com/ad-en/title/70080038"
+                        target="_blank"
+                        class="container_right-body-hobbies-item-movie-item l-4 m-12"
+                      >
+                        <div class="card">
+                          <div class="wrapper">
+                            <img
+                              src="./access/img/iron-1.jpg"
+                              class="cover-image"
+                            />
+                          </div>
+                          <img src="./access/img/logo-iron.png" class="title" />
+                          <img
+                            src="./access/img/iron-2.png"
+                            class="character"
+                          />
+                        </div>
+                      </a>
+                      <a
+                        href="https://www.netflix.com/vn-en/title/60004481"
+                        target="_blank"
+                        class="container_right-body-hobbies-item-movie-item spider l-4 m-12"
+                      >
+                        <div class="card">
+                          <div class="wrapper">
+                            <img
+                              src="./access/img/spider-1.jpg"
+                              class="cover-image"
+                            />
+                          </div>
+                          <img
+                            src="./access/img/logo-spider.png"
+                            class="title"
+                          />
+                          <img
+                            src="./access/img/spider-2.png"
+                            class="character"
+                          />
+                        </div>
+                      </a>
+                      <a
+                        href="https://www.netflix.com/vn-en/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fsearch"
+                        target="_blank"
+                        class="container_right-body-hobbies-item-movie-item captain l-4 m-12"
+                      >
+                        <div class="card">
+                          <div class="wrapper">
+                            <img
+                              src="./access/img/captain-1.jpg"
+                              class="cover-image"
+                            />
+                          </div>
+                          <img
+                            src="./access/img/logo-captain.png"
+                            class="title"
+                          />
+                          <img
+                            src="./access/img/captain-2.png"
+                            class="character"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Chơi game -->
+                  <div class="container_right-body-hobbies-item">
+                    <h2 class="container_right-body-hobbies-game-title">
+                      <i class="fa-solid fa-gamepad"></i>
+                      Chơi game
+                    </h2>
+                    <a
+                      href="https://fo4.garena.vn/"
+                      target="_blank"
+                      class="container_right-body-hobbies-game-fo4"
+                    >
+                      <img
+                        src="./access/img/fo4.jpg"
+                        alt=""
+                        class="container_right-body-hobbies-game-fo4-img"
+                      />
+                      <div class="container_right-body-hobbies-game-fo4-text">
+                        <h3>FIFA Online 4</h3>
+                        <p>Giải trí</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Mục tiêu -->
+            <div class="container_right-body">
+              <div class="container_right-body-target">
+                <h1
+                  style="font-size: 2.8rem"
+                  class="container_right-body-target-title"
+                >
+                  Mục tiêu
+                </h1>
+                <h2 style="font-size: 2.4rem; margin-top: 30px">
+                  Trở thành lập trình viên Full-Stack
+                  <i style="color: red" class="fa-solid fa-heart"></i>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./access/main.js"></script>
-</body>
+  </body>
 </html>
